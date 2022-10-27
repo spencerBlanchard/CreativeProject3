@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react"
 
 class Hack extends React.Component {
@@ -120,3 +121,5 @@ class Hack extends React.Component {
 
 
 export default Hack;
+=======
+>>>>>>> adcfaa6231d6cdfb09307dd3cd8f69c1cb66c1cd
