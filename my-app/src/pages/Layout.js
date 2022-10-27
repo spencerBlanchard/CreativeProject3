@@ -7,16 +7,16 @@ const Layout = () => {
       <h1>Howdy and welcome to the website let's hack it</h1>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
-            <Link to="/hack">hack</Link>
+            <Link to="/Hack">hack</Link>
           </li>
           <li>
-            <Link to="/explode">explode press it yes</Link>
+            <Link to="/Explode">explode press it yes</Link>
           </li>
           <li>
-            <Link to="/win">win</Link>
+            <Link to="/Win">win</Link>
           </li>
         </ul>
       </nav>

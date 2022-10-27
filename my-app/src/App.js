@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import Home from "./pages/home";
-import Hack from "./pages/hack";
-import Win from "./pages/win";
-import Explode from "./pages/explode";
+import Home from "./pages/Home";
+import Hack from "./pages/Hack";
+import Win from "./pages/Win";
+import Explode from "./pages/Explode";
 
 export default function App() {
   return (

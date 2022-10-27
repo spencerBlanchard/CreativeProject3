@@ -1,4 +1,4 @@
-export default function hack() {
+    const Hack = () => {
     return (
         <div>
         <script>
@@ -66,3 +66,5 @@ export default function hack() {
     </div>
     );
 }
+
+export default Hack;
