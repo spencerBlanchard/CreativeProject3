@@ -12,7 +12,7 @@ const Home = () => {
     <div>
           <h1>Home</h1>
           
-          <p> Hello world how are you </p>
+          <p> First, prove to me that you are a human. </p>
             <label>
             <Checkbox
               label="I'm not a robot"
@@ -22,6 +22,9 @@ const Home = () => {
             </label>
             
           <p>Is "My Value" checked? {checked.toString()}</p>
+          
+          
+          <p> Then, press this button: </p>
           
     </div>
 
