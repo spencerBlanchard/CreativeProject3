@@ -1,34 +1,16 @@
 import React from "react"
+import { Outlet, Link } from "react-router-dom";
+import startGame from "../Media/startGame.png"
 
 
 const Home = () => {
-
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = () => {
-    setChecked(!checked);
-  };
 
 
   return (
     <div>
           <h1>Home</h1>
-          
-          <p> First, prove to me that you are a human. </p>
-          
-          
-            <label>
-            <Checkbox
-              label="I'm not a robot"
-              value={checked}
-              onChange={handleChange}
-            />
-            </label>
-            
-          <p>Is "My Value" checked? {checked.toString()}</p>
-          
-          
-          <p> Then, press this button: </p>
+          <Link to="/Hack"><img src={startGame}/></Link>
+
           
     </div>
 
@@ -37,13 +19,5 @@ const Home = () => {
 };
 
 
-const Checkbox = ({ label, value, onChange }) => {
-  return (
-    <label>
-      <input type="checkbox" checked={value} onChange={onChange} />
-      {label}
-    </label>
-  );
-};
 
 export default Home;

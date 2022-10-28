@@ -9,6 +9,7 @@ import Explode from "./pages/Explode";
 export default function App() {
   return (
     // <BrowserRouter basename="/CreativeProject3/my-app/build/">
+    <div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -20,6 +21,10 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <br/><br/><br/><br/><br/><br/>
+    "Spencer Blanchard, Sterling Smith"
+    <a href = "https://github.com/spencerBlanchard/CreativeProject3" target = 'blank'> Github repository </a>
+    </div>
   );
 }
 
