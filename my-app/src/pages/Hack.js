@@ -1,6 +1,6 @@
 import React from "react"
 import { Outlet, Link } from "react-router-dom";
-import greenbutton from "../Media/greenbutton.png";
+import greenbutton from "../Media/DeactivateMotionSensor.png";
 
 class Hack extends React.Component {
     constructor(props) {
