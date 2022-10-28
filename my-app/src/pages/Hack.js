@@ -1,5 +1,6 @@
 import React from "react"
-// import { useNavigate } from "react-router-dom"
+import { Outlet, Link } from "react-router-dom";
+import greenbutton from "../Media/greenbutton.png";
 
 class Hack extends React.Component {
     constructor(props) {
@@ -59,9 +60,6 @@ class Hack extends React.Component {
         console.log("go to win page");
         // navigate("Win.js");
 
-        // const navigate = useNavigate()
-
-        // const onClickHandler = () => navigate("./Win.js");
     }
 
     handleChange(event) {
@@ -75,7 +73,8 @@ class Hack extends React.Component {
     render() {
         let button;
         if (this.state.success) {
-            button = <button onClick={this.navigateToWin}>Button</button>
+            // button = <button onClick={this.navigateToWin}>Button</button>
+            button = <Link to="/Win"><img src={greenbutton}/></Link>
         } else {
             button = <div/>
         }
