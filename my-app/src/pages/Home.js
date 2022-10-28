@@ -1,4 +1,6 @@
-import * as React from 'react';
+import React from "react"
+
+
 const Home = () => {
 
   const [checked, setChecked] = React.useState(false);
@@ -13,6 +15,8 @@ const Home = () => {
           <h1>Home</h1>
           
           <p> First, prove to me that you are a human. </p>
+          
+          
             <label>
             <Checkbox
               label="I'm not a robot"
