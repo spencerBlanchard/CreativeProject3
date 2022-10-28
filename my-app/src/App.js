@@ -13,7 +13,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
-          {<Route path="win" element={<Win />} />}
+          <Route path="win" element={<Win />} />
           <Route path="hack" element={<Hack />} />
           <Route path="explode" element={<Explode />} />
         </Route>
