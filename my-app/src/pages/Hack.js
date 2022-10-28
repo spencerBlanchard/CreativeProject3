@@ -23,9 +23,11 @@ class Hack extends React.Component {
         let submission = this.state.value;
         console.log(submission);
         let length = submission.length;
-        if (length != 6) {
-            this.state.correctSpace = 0;
-            this.state.wrongSpace = 0;
+        if (length !== 6) {
+            this.setState({ correctSpace: 0 });
+            this.setState({ wrongSpace: 0 });
+            // this.state.correctSpace = 0;
+            // this.state.wrongSpace = 0;
             return;
         }
 
@@ -38,7 +40,7 @@ class Hack extends React.Component {
             if (answer.charAt(i) === submission.charAt(i)) {
                 ++cS;
             }
-            else if (submission.search(answer.charAt(i)) != -1) {
+            else if (submission.search(answer.charAt(i)) !== -1) {
                 ++wS;
             }
         }
@@ -47,7 +49,8 @@ class Hack extends React.Component {
         this.setState({ wrongSpace: wS });
 
         if (cS === 6 && this.state.success === false) {
-            this.state.success = true;
+            this.setState({ success: true });
+            // this.state.success = true;
             // this.showSuccess();
         }
 
@@ -65,7 +68,7 @@ class Hack extends React.Component {
     //     return;
     // }
 
-    navigateToWin () {
+    navigateToWin() {
         console.log("go to win page");
         // navigate("Win.js");
     }
