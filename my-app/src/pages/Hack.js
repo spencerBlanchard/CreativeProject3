@@ -1,4 +1,5 @@
 import React from "react"
+// import { useNavigate } from "react-router-dom"
 
 class Hack extends React.Component {
     constructor(props) {
@@ -13,7 +14,6 @@ class Hack extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.navigateToWin = this.navigateToWin.bind(this);
-        // this.showSuccess = this.showSuccess.bind(this);
 
     }
 
@@ -50,27 +50,18 @@ class Hack extends React.Component {
 
         if (cS === 6 && this.state.success === false) {
             this.setState({ success: true });
-            // this.state.success = true;
-            // this.showSuccess();
         }
 
         return;
     }
 
-    // showSuccess() {
-
-    //     // let btn = document.createElement("button");
-    //     // btn.innerHTML = "Success!!!";
-    //     // btn.onclick = function() {
-    //     //     alert("You clicked the success button!");
-    //     // };
-    //     // document.body.appendChild(btn);
-    //     return;
-    // }
-
     navigateToWin() {
         console.log("go to win page");
         // navigate("Win.js");
+
+        // const navigate = useNavigate()
+
+        // const onClickHandler = () => navigate("./Win.js");
     }
 
     handleChange(event) {
@@ -84,14 +75,9 @@ class Hack extends React.Component {
     render() {
         let button;
         if (this.state.success) {
-            button = <button onClick={this.navigateToWin}>ButtonName</button>
-        }
-        else {
+            button = <button onClick={this.navigateToWin}>Button</button>
+        } else {
             button = <div/>
-        }
-
-        if (this.state.success) {
-
         }
 
         return (
