@@ -8,9 +8,9 @@ import Explode from "./pages/Explode";
 
 export default function App() {
   return (
-    // <BrowserRouter basename="/CreativeProject3/my-app/build/">
+    
     <div>
-    <BrowserRouter>
+    <BrowserRouter basename="/CreativeProject3/my-app/build/">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
