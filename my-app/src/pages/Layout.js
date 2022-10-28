@@ -4,7 +4,7 @@ const Layout = () => {
   return (
     <>
       <nav>
-      <h1>Howdy and welcome to the website</h1>
+      <h1>Welcome to Creative Project #3. First, prove you are a human, then solve a wordle-ish type puzzle. If you succeed, you won't blow up!</h1>
         <ul>
           <li>
             <Link to="/Home">Home</Link>

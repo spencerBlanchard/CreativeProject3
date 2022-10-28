@@ -8,7 +8,7 @@ import Explode from "./pages/Explode";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/react/multi/build">
+    <BrowserRouter basename="/CreativeProject3/my-app/build/">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
