@@ -1,4 +1,4 @@
-import winnerImg from '../Media/greenbutton.png';
+import winnerImg from '../Media/win.jpg';
 
 const Win = () => {
   return (
